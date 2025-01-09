@@ -1,0 +1,42 @@
+{
+  "name": "@chang-yan/greeting-package",
+  "version": "1.0.0",
+  "description": "This is a package for greeting",
+  "main": "lib/index.cjs",
+  "exports": {
+    "import": {
+      "default": "./lib/index.mjs",
+      "types": "./types.index.d.ts"
+    },
+    "require": {
+      "default": "./lib/index.cjs",
+      "types": "./types/index.d.ts"
+    }
+  },
+  "files": [
+    "lib"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chang-yan/greeting_package.git"
+  },
+  "keywords": [
+    "greet"
+  ],
+  "author": "chang-yan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chang-yan/greeting_package/issues"
+  },
+  "homepage": "https://github.com/chang-yan/greeting_package#readme",
+  "devDependencies": {
+    "rollup": "^4.17.2",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.4.5"
+  }
+}
